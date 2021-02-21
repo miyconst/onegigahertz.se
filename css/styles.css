@@ -1,0 +1,226 @@
+@font-face {
+    /* https://fonts.google.com/specimen/Fjord+One?preview.text_type=custom#standard-styles */
+    font-family: 'Fjord One';
+    src: url('/fonts/fjord-one-regular.ttf');
+}
+
+body {
+    background-color: #fafafa;
+    color: #303030;
+    font-family: 'Fjord One';
+    max-width: 1280px;
+    margin: 0px auto;
+    font-size: 19px;
+    line-height: 1.6em;
+    padding: 0 55px;
+}
+
+
+@media (max-width: 500px) {
+    body {
+        padding: 0 25px;
+    }
+}
+
+a {
+    color: #b36200;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0051b3;
+}
+
+a i.fa {
+    margin-right: 7px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 1em 0 0.7em 0;
+    font-size: 55px;
+}
+
+h1 img {
+    display: block;
+    height: 200px;
+    transition: height 0.3s;
+    margin: 0 auto 20px auto;
+}
+
+@media (max-width: 500px) {
+    h1 img {
+        display: block;
+        height: 150px;
+        transition: height 0.3s;
+        margin: 0 auto 20px auto;
+    }
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.6em;
+    text-transform: uppercase;
+}
+
+p.h1-suffix {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+}
+
+hr.h2-prefix {
+    width: 100px;
+    height: 2px;
+    border: none;
+    background-color: #303030;
+    margin: 0 auto;
+}
+
+p.h2-suffix {
+    text-align: center;
+}
+
+nav {
+    display: block;
+    overflow: auto;
+    margin: 55px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    float: left;
+    width: 25%;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 800px) {
+    nav ul li {
+        width: 50%;
+    }
+}
+
+nav ul li a {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    line-height: 40px;
+}
+
+section {
+    margin: 55px 0;
+}
+
+section > div {
+    box-shadow: 0 2px 6px 1px rgb(0 0 0 / 26%);
+    padding: 25px 25px;
+}
+
+div.gallery {
+    display: block;
+    overflow: auto;
+    margin-bottom: 35px;
+}
+
+div.gallery a {
+    display: block;
+    float: left;
+    width: 350px;
+    margin-right: 35px;
+    transition: width 0.3s;
+}
+
+div.gallery:nth-child(odd) a {
+    float: right;
+}
+
+@media (max-width: 1000px) {
+    div.gallery a {
+        float: none;
+        width: 100%;
+        transition: width 0.3s;
+    }
+
+    div.gallery:nth-child(odd) a {
+        float: none;
+    }
+}
+
+div.gallery a img {
+    display: block;
+    width: 100%;
+}
+
+div.gallery > div h3 {
+}
+
+div.gallery h3 {
+    font-size: 1.4em;
+}
+
+div.gallery ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.9em;
+}
+
+div.faq {
+}
+
+div.faq ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    display: block;
+    overflow: auto;
+    font-size: 0.8em;
+    padding-bottom: 55px;
+}
+
+footer h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+footer > div {
+    float: left;
+    transition: float 0.3s;
+    width: 33.33%;
+    box-sizing: border-box;
+}
+
+footer > div:nth-child(2) {
+    padding: 0 20px;
+}
+
+@media (max-width: 800px) {
+    footer > div {
+        float: none;
+        width: auto;
+        transition: float 0.3s;
+    }
+
+    footer > div:nth-child(2) {
+        padding: 0;
+    }
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
