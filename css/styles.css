@@ -4,6 +4,12 @@
     src: url('/fonts/fjord-one-regular.ttf');
 }
 
+@font-face {
+    /* https://www.fonts-online.ru/font/New-Standard-Old */
+    font-family: 'New Standard Old';
+    src: url('/fonts/new-standard-old.ttf');
+}
+
 body {
     background-color: #fafafa;
     color: #303030;
@@ -15,6 +21,9 @@ body {
     padding: 0 55px;
 }
 
+body.ua {
+    font-family: 'New Standard Old';
+}
 
 @media (max-width: 500px) {
     body {
@@ -188,7 +197,7 @@ footer {
     display: block;
     overflow: auto;
     font-size: 0.8em;
-    padding-bottom: 55px;
+    padding-bottom: 35px;
 }
 
 footer h4 {
@@ -212,6 +221,7 @@ footer > div:nth-child(2) {
         float: none;
         width: auto;
         transition: float 0.3s;
+        margin-bottom: 25px;
     }
 
     footer > div:nth-child(2) {
@@ -223,4 +233,23 @@ footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+ul.languages {
+    list-style-type: none;
+    padding: 35px 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #303030;
+    font-family: 'New Standard Old';
+}
+
+ul.languages a {
+    display: block;
+    line-height: 1.5em;
+    padding: 0 35px;
 }
