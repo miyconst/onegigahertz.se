@@ -248,6 +248,11 @@ ul.languages {
     font-family: 'New Standard Old';
 }
 
+ul.languages li {
+    width: 33.33%;
+    text-align: center;
+}
+
 ul.languages a {
     display: block;
     line-height: 1.5em;
